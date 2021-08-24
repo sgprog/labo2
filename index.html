@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="present.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ma première <em>truc</em> page Web</h1> 
+    <h2>Autre chose <em>blablabla</em></h2>
+    <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="post">
+        Nom: <input type="text" name="nom" id="nomPersonne" value="abc" size="30"><br>
+        Code: <input type="password" name="pwd" size="30"><br>
+        Code postal: <input type="text" name="codePostal" placeholder="A1A 1A1" 
+              pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"><br>
+        Adresse: <textarea name="adresse" rows="3" cols="60"></textarea><br>
+        Choisir votre couleur: 
+        <select size="4" name="couleurs" multiple>
+            <option value="toto">Bleu</option>
+            <option value="2">Rouge</option>
+            <option>Orange</option>            
+            <option value="3" selected>Blanc</option>
+            <option value="Noir">Black</option>
+            <option>Violet</option>
+        </select><br>
+        Choisir la langue: <input list="langues" name="langue"><br>
+        <datalist id="langues">
+            <option>français</option>
+            <option>anglais</option>
+            <option>espagnol</option>
+            <option>allemand</option>
+        </datalist>
+        Langue de preference: 
+        Francais <input type="radio" name="langPref" value="francais" checked> 
+        Anglais <input type="radio" name="langPref" value="anglais"><br>
+        Langues parlees: 
+        Francais <input type="checkbox" name="langParlee" value="francais" checked> 
+        Anglais <input type="checkbox" name="langParlee" value="anglais"><br>        
+        Commentaires: <textarea name="comm" rows="3" cols="60">Inscrivez vos commentaires ici...</textarea><br>
+        <button onclick="submit();">Truc <span style="color: red;">machin</span></button> <input type="reset" value="Retablir">
+    </form>
+</body>
+</html>
