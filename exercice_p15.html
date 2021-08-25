@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    fieldset {
+        background-color:burlywood;
+    }
+
+    fieldset > label {
+        height: 30px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 3px 6px;
+        text-align: left;
+        width: 150px;
+        vertical-align: top;
+    }
+    /*
+    span > label {
+        width: 50px;
+    }
+    */
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="POST">
+        <fieldset>
+            <label for="name">Nom</label>
+            <input type="text" size="20" maxlength="50" id="name" name="name"><br>
+            <label for="code">Code Permanent</label>
+            <input type="text" size="" id="code" name="code"><br>
+
+            <label>Couleur</label>
+
+            <select name="colors" id="clr">
+                <option>Bleu</option>
+                <option>Rouge</option>
+
+            </select><br>
+            <label>Langue préf.</label>
+            <span>
+                <label for="fr">Français</label>
+                <input type="radio" id="fr" name="fav_lang" value="fr">
+                <label for="en">Anglais</label>
+                <input type="radio" id="en" name="fav_lang" value="en">
+            </span>
+            <br>
+            <label>Jours</label>
+                <span>
+                    <label for="lundi">Lundi</label>
+                    <input type="checkbox" id="lundi" name="lundi" value="Lundi">
+                    <label for="mardi">Mardi</label>
+                    <input type="checkbox" id="mardi" name="mardi" value="Mardi">
+                    <label for="mercredi">Mercredi</label>
+                    <input type="checkbox" id="mercredi" name="mercredi" value="Mercredi">
+                    <label for="jeudi">Jeudi</label>
+                    <input type="checkbox" id="jeudi" name="jeudi" value="Jeudi">
+                    <label for="vendredi">Vendredi</label>
+                    <input type="checkbox" id="vendredi" name="vendredi" value="Vendredi">
+            </span>
+
+
+
+
+ 
+
+<!--
+            <input list="colors">
+            <datalist id="colors">
+                <option value="Bleu">
+
+            </datalist>
+
+            
+            <label for="phone">Telephone</label>
+            <input name="telephone" size="20" maxlength="10" id="phone" name="phone"><br>
+            <label for="codepostal">Code postal</label>
+            <input type="text" required placeholder="H1H 1H1" pattern="[A-Z][0-9][A-Z][0-9][A-Z][0-9]" id="codepostal" name="codepostal"><br>
+            -->
+        </fieldset>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Rétablir">
+        
+    </form>
+</body>
+</html>

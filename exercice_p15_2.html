@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+    fieldset {
+        display: inline-block;
+    }
+
+
+    fieldset > label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 3px 6px;
+        text-align: left;
+        width: 60px;
+        vertical-align: top;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="POST">
+    
+        <fieldset>
+            <legend>Client</legend>
+            <label>Nom</label>
+            <input type="text" size="20" maxlength="50" id="name" name="name"><br>
+            <label>Adresse</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">Valeur initiale
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Livraison</legend>
+            <label>Nom</label>
+            <input type="text" size="20" maxlength="50" id="name" name="name"><br>
+            <label>Adresse</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">Valeur initiale
+            </textarea>
+        </fieldset>
+        <label>Couleurs:</label>
+        <select name="colors" id="clr" multiple>
+            <option>Vert</option>
+            <option>Rouge</option>
+            <option>Bleu</option>
+        </select><br>
+
+
+        <label for="M">M</label>
+        <input type="radio" id="M" name="genre" value="M">
+        <label for="F">F</label>
+        <input type="radio" id="F" name="genre" value="F">
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Rétablir">
+
+    </form>
+
+
+</body>
+</html>
